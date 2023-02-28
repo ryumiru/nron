@@ -1,48 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
 <title>CSS</title>
 <meta charset="uff-8">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T3279NFTE4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T3279NFTE4');
-</script>
-<h1><a href="index.html">WEB</a></h1>
-<style>
-    #active {
-        color:gold;
-    }
-    .saw {
-        color:gold;
-    }
-    a {
-        color:brown;
-        text-decoration: none;
-    }
-    h1 {
-        font-size:60px; 
-        text-align: center;
-        border-bottom:5px solid gold;
-        margin:0px;
-    }
-    ol {
-        border-right:5px solid gold;
-        width:150px;
-        padding:20px;
-    }
-</style>
-<ul>
-<ol>
-    <li><a href="1.html" font color="blue">html</font></a></li>
-    <li><a href="1.html" class="saw" id="active">CSS</font></a></li>
-    <li><a href="3.html" font color="blue">JavasCript</font></li>
-</ol>
-</ul>
-    <H2><a href="https://namu.wiki/w/CSS" target="_blank" title="CSS나무위키"></font>CSS</a>을 배우고 웹 페이지를 만들자~!</H2>
-<p>
-웹 페이지는 이제 그냥 뭐 그렇다.
-</p>
 </head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
+<ol>
+<li><a href="1.html">html</a></li>
+<li><a href="2.html">CSS</a></li>
+<li><a href="3.html">JavasCript</a></li>
+</ol>
+<div id="article">
+<h2>CSS</H2>
+<p>
+    HTML, CSS, JS
+</p>
+</div>
+</div>
+</body>
+<br><br>
+<p>
+    <div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the comments powered by Disqus</noscript>
+</p>
+<html>
+    <head>
+        <meta charset="uff-8">
+        <title></title>
+        <style>
+        body {
+            margin: 0;
+        }
+        h1 {
+            font-size:60px; 
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin:0px;
+            padding:20px;
+        }
+        #grid ol {
+            border-right:1px solid gray;
+            width:100px;
+            margin:0;
+            padding:20px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article {
+            padding-left:25px;
+        }
+        @media(max-width:800px) {
+            #grid{
+                display: block;
+            }
+        }
+        ol {
+            border-right:none;
+        }
+        h1 {
+            border-bottom:1px solid gray;
+        }
+        </style>
+    </head>
+    <bodt>
+
+    </bodt>
+</html>
