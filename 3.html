@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>WEB1 - html</title>
-<meta charset="utf-8">
-</head>
-<body>
-    <h1><a href="index.html">WEB</a></h1> 
-    <input id="night_day" type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        this.value = 'day';
-    
-        var links = document.querySelectorAll('a');
-            var  i = 0;
-            while(i<links.length){
-                links[i].style.color='powderblue';
-                i=i+1;
-            }
-        } else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            this.value = 'night';
-    
-            var links = document.querySelectorAll('a');
-            var  i = 0;
-            while(i<links.length){
-                links[i].style.color='blue';
-                i=i+1;
+    <head>
+        <meta charset="utf-8">
+        <title>WEB</title>
+    </head>
+    <style>
+        a {
+            color:blue;
         }
-    }
-    ">
-<ol>
-    <a href="1.html"><li>HTML</li></a>
-    <a href="2.html"><li>CSS</li></a>
-    <a href="3.html"><li>JavaScript</li></a>
-</ol>
-<h2>JavaScript</h2>
-<p style="margin-top: 45px;">
-첫 탄생은 1995년 넷스케이프에서 근무하던 브랜든 아이크가 10일만에 설계한 것으로부터 시작한다. 처음에는 Mocha라는 이름이었지만 4달 만에 LiveScript라는 이름으로 개명하고 다시 3달 후에는 JavaScript라는 이름이 되어 오늘날까지 이어지고 있다.
-'Java와 구문이 유사해서 이름을 JavaScript로 명명했다'는 표면상의 이유를 대지만 그 속은 Java의 유명세를 타서 묻어가려고 의도적으로 그렇게 작명한 것이다.
-물론 무단으로 도용한 것은 아니고, 썬 마이크로시스템즈(지금은 오라클에 인수됨)에게 상표권 사용 허락을 받았다.
-# 오라클이 인수하면서 상표권도 오라클로 넘어갔는데, 소송으로 악명높은 오라클이 JavaScript는 딱히 손대지 않고 있다.
-애초에 허락을 맡은 것이기도 하고 JavaScript가 워낙 널리 쓰이다보니 이제는 서로 각자의 유명세에 보탬이 되는 상부상조 관계이기 때문.
-</p>
-<img src="nron.avif" width="100%">
-</body>
+    </style>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <input type="button" value="눌러보셈" onclick="alert('어쩔티비')">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <h2>JS</h2>
+        <p>
+            <strong>자바스크립트(영어: JavaScript)</strong>는 객체 기반의 스크립트 프로그래밍 언어이다.
+            이 언어는 웹 브라우저 내에서 주로 사용되며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다.
+            또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다. 자바스크립트는 본래 넷스케이프 커뮤니케이션즈 코퍼레이션의 브렌던 아이크(Brendan Eich)가 처음에는 모카(Mocha)라는 이름으로,
+            나중에는 라이브스크립트(LiveScript)라는 이름으로 개발하였으며, 최종적으로 자바스크립트가 되었다.
+            자바스크립트가 썬 마이크로시스템즈의 자바와 구문이 유사한 점도 있지만, 이는 사실 두 언어 모두 C 언어의 기본 구문에 바탕을 뒀기 때문이고, 자바와 자바스크립트는 직접적인 연관성은 약하다.
+            이름과 구문 외에는 자바보다 셀프나 스킴과 유사성이 많다. 자바스크립트는 ECMA스크립트(ECMAScript)의 표준 사양을 가장 잘 구현한 언어로
+            인정받고 있으며 ECMAScript 5(ES5)까지는 대부분의 브라우저에서 기본적으로 지원되었으나 ECMAScript 6 이후부터는 브라우저 호환성을 위해 트랜스파일러로 컴파일된다.[4]
+        </p>
+        <img src="seagull.jpg" width="100%">
+    </body>
 </html>
